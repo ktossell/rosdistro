@@ -50,14 +50,16 @@ apr:
   rhel: [apr-devel, apr-util]
   ubuntu: [libapr1-dev, libaprutil1-dev]
 arista:
-  arch: [arista-transcoder]
+  arch:
+    aur: [arista-transcoder]
   debian: [arista]
   gentoo:
     portage:
       packages: [media-video/arista]
   ubuntu: [arista]
 armadillo:
-  arch: [armadillo]
+  arch:
+    aur: [armadillo]
   debian: [libarmadillo-dev]
   gentoo:
     portage:
@@ -117,7 +119,8 @@ assimp-dev:
       apt:
         packages: [libassimp-dev]
 atlas:
-  arch: [atlas-lapack]
+  arch:
+    aur: [atlas-lapack]
   debian: [libatlas-base-dev]
   fedora: [atlas-devel]
   gentoo:
@@ -289,7 +292,8 @@ bzip2:
   rhel: [bzip2-devel]
   ubuntu: [libbz2-dev]
 cgal:
-  arch: [cgal]
+  arch:
+    aur: [cgal]
   debian: [libcgal-dev]
   fedora: [CGAL-devel]
   gentoo:
@@ -313,12 +317,14 @@ cmake:
   gentoo: [dev-util/cmake]
   ubuntu: [cmake]
 coinor-libipopt-dev:
-  arch: [coinor-all]
+  arch:
+    aur: [coinor-all]
   debian: [coinor-libipopt-dev]
   fedora: [coin-or-CoinUtils-devel]
   ubuntu: [coinor-libipopt-dev]
 collada-dom:
-  arch: [collada-dom]
+  arch:
+    aur: [collada-dom]
   debian: [collada-dom-dev]
   fedora: [collada-dom-devel]
   ubuntu: [collada-dom-dev]
@@ -367,7 +373,8 @@ cvs:
       packages: [dev-vcs/cvs]
   ubuntu: [cvs]
 daemontools:
-  arch: [daemontools]
+  arch:
+    aur: [daemontools]
   debian: [daemontools]
   gentoo:
     portage:
@@ -383,7 +390,9 @@ doxygen:
   rhel: [doxygen]
   ubuntu: [doxygen]
 eclipse:
-  arch: [eclipse, eclipse-rcp, eclipse-emf, eclipse-pde]
+  arch:
+    #pacman: [eclipse] # can't use two installers; emf depends on eclipse
+    aur: [eclipse-rcp, eclipse-emf, eclipse-pde]
   debian: [eclipse, eclipse-rcp, eclipse-xsd, eclipse-pde]
   fedora: [eclipse-pde,eclipse-emf]
   gentoo:
@@ -399,7 +408,8 @@ eclipse:
     quantal: [eclipse, eclipse-platform, eclipse-rcp, eclipse-emf, eclipse-xsd, eclipse-pde]
     raring: [eclipse, eclipse-platform, eclipse-rcp, eclipse-emf, eclipse-xsd, eclipse-pde]
 eigen:
-  arch: [eigen3]
+  arch:
+    aur: [eigen3]
   debian:
     sid: [libeigen3-dev]
     wheezy: [libeigen3-dev]
@@ -425,7 +435,8 @@ epydoc:
   macports: [py26-epydoc]
   ubuntu: [python-epydoc]
 f2c:
-  arch: [f2c]
+  arch:
+    aur: [f2c]
   debian: [f2c, libf2c2, libf2c2-dev]
   fedora: [f2c, f2c-libs]
   gentoo:
@@ -487,12 +498,14 @@ freeimage:
   rhel: [freeimage-devel]
   ubuntu: [libfreeimage-dev]
 ftdi-eeprom:
-  arch: [ftdi_eeprom-git]
+  arch:
+    aur: [ftdi_eeprom-git]
   debian: [ftdi-eeprom]
   fedora: [libftdi-devel, libftdi-c++-devel]
   ubuntu: [ftdi-eeprom]
 gazebo:
-  arch: [gazebo-hg]
+  arch:
+    aur: [gazebo-hg]
   gentoo:
     portage:
       packages: [sci-electronics/gazebo]
@@ -504,7 +517,8 @@ gcc-avr:
   gentoo: [cross-avr/gcc]
   ubuntu: [gcc-avr]
 gccxml:
-  arch: [gccxml-git]
+  arch:
+    aur: [gccxml-git]
   debian: [gccxml]
   fedora: [gccxml]
   gentoo:
@@ -512,7 +526,8 @@ gccxml:
       packages: [dev-cpp/gccxml]
   ubuntu: [gccxml]
 gforth:
-  arch: [gforth]
+  arch:
+    aur: [gforth]
   debian: [gforth]
   fedora: [gforth]
   gentoo: [gforth]
@@ -544,7 +559,8 @@ git:
   opensuse: [git-core]
   ubuntu: [git-core]
 glc:
-  arch: [glc]
+  arch:
+    aur: [glc]
   gentoo:
     portage:
       packages: [media-libs/quesoglc]
@@ -564,7 +580,8 @@ gnuplot:
       packages: [sci-visualization/gnuplot]
   ubuntu: [gnuplot]
 gradle:
-  arch: [gradle]
+  arch:
+    aur: [gradle]
   fedora: [gradle]
   ubuntu: [gradle]
 graphicsmagick:
@@ -684,7 +701,8 @@ intltool:
   opensuse: [intltool]
   ubuntu: [intltool]
 ipmitool:
-  arch: [ipmitool]
+  arch:
+    aur: [ipmitool]
   debian: [ipmitool]
   fedora: [ipmitool]
   gentoo:
@@ -706,7 +724,8 @@ java:
   gentoo: [dev-java/sun-jdk]
   ubuntu: [default-jdk]
 joystick:
-  arch: [joyutils]
+  arch:
+    aur: [joyutils]
   debian: [joystick]
   fedora:
     beefy: [joystick]
@@ -739,12 +758,14 @@ kgraphviewer:
       packages: [media-gfx/kgraphviewer]
   ubuntu: [kgraphviewer]
 libann-dev:
-  arch: [ann]
+  arch:
+    aur: [ann]
   debian: [libann-dev]
   fedora: [ann-devel]
   ubuntu: [libann-dev]
 libapache2-mod-python:
-  arch: [mod_python]
+  arch:
+    aur: [mod_python]
   debian: [libapache2-mod-python]
   fedora: [mod_python]
   gentoo:
@@ -752,7 +773,8 @@ libapache2-mod-python:
       packages: [www-apache/mod_python]
   ubuntu: [libapache2-mod-python]
 libargtable2-dev:
-  arch: [argtable]
+  arch:
+    aur: [argtable]
   debian: [libargtable2-dev]
   fedora: [argtable2-devel]
   gentoo:
@@ -780,7 +802,8 @@ libavahi-core-dev:
   fedora: [avahi-devel]
   ubuntu: [libavahi-core-dev]
 libblas-dev:
-  arch: [cblas]
+  arch:
+    aur: [cblas]
   debian: [libblas-dev]
   fedora: [blas-devel]
   ubuntu: [libblas-dev]
@@ -820,7 +843,8 @@ libceres-dev:
       packages: [sci-libs/ceres-solver]
   ubuntu: [libceres-dev]
 libcoin60-dev:
-  arch: [coin]
+  arch:
+    aur: [coin]
   debian: [libcoin60-dev]
   fedora: [Coin2-devel]
   gentoo:
@@ -886,7 +910,8 @@ libfftw3:
       packages: [sci-libs/fftw]
   ubuntu: [libfftw3-3, libfftw3-dev]
 libflann:
-  arch: [flann]
+  arch:
+    aur: [flann]
   debian: [libflann1.7]
   fedora: [flann]
   gentoo:
@@ -897,7 +922,8 @@ libflann:
     quantal:  [libflann1.7]
     raring:  [libflann1.7]
 libflann-dev:
-  arch: [flann]
+  arch:
+    aur: [flann]
   debian: [libflann-dev]
   fedora: [flann-devel]
   gentoo:
@@ -905,7 +931,8 @@ libflann-dev:
       packages: [sci-libs/flann]
   ubuntu: [libflann-dev]
 libfreenect-dev:
-  arch: [libfreenect]
+  arch:
+    aur: [libfreenect]
   debian: [libfreenect-dev]
   fedora: [libfreenect-devel]
   ubuntu: [libfreenect-dev]
@@ -959,12 +986,14 @@ libglib-dev:
       packages: [dev-libs/glib]
   ubuntu: [libglib2.0-dev]
 libglui-dev:
-  arch: [glui]
+  arch:
+    aur: [glui]
   debian: [libglui-dev]
   fedora: [glui-devel]
   ubuntu: [libglui-dev]
 libglw1-mesa:
-  arch: [glw]
+  arch:
+    aur: [glw]
   debian: [libglw1-mesa]
   fedora: [mesa-libGlw]
   gentoo:
@@ -1214,17 +1243,20 @@ libopenni-dev:
   fedora: [openni-devel]
   ubuntu: [libopenni-dev]
 libopenni-nite-dev:
-  arch: [primesense-nite]
+  arch:
+    aur: [primesense-nite]
   debian: [libopenni-nite-dev]
   fedora: [openni-nite-devel]
   ubuntu: [libopenni-nite-dev]
 libopenni-sensor-primesense-dev:
-  arch: [sensorkinect]
+  arch:
+    aur: [sensorkinect-git]
   debian: [libopenni-sensor-primesense-dev]
   fedora: [openni-primesense]
   ubuntu: [libopenni-sensor-primesense-dev]
 libopenni2-dev:
-  arch: [openni2]
+  arch:
+    aur: [openni2]
   fedora: [openni-devel]
   ubuntu: [libopenni2-dev]
 libopenscenegraph:
@@ -1297,7 +1329,8 @@ libpng12-dev:
       packages: [media-libs/libpng]
   ubuntu: [libpng12-dev]
 libpoco-dev:
-  arch: [poco]
+  arch:
+    aur: [poco]
   debian: [libpoco-dev]
   fedora: [poco-devel]
   gentoo:
@@ -1325,12 +1358,14 @@ libpq-dev:
       packages: [dev-libs/libpqxx]
   ubuntu: [libpq-dev]
 libqglviewer-qt4:
-  arch: [libqglviewer]
+  arch:
+    aur: [libqglviewer]
   debian: [libqglviewer-qt4-2]
   fedora: [libQGLViewer]
   ubuntu: [libqglviewer-qt4-2]
 libqglviewer-qt4-dev:
-  arch: [libqglviewer]
+  arch:
+    aur: [libqglviewer]
   debian: [libqglviewer-qt4-dev]
   fedora: [libQGLViewer-devel]
   ubuntu: [libqglviewer-qt4-dev]
@@ -1399,7 +1434,8 @@ libqtgui4:
       packages: [dev-qt/qtgui]
   ubuntu: [libqtgui4]
 libqwt5-qt4-dev:
-  arch: [qwt5]
+  arch:
+    aur: [qwt5]
   debian:
     apt:
       packages: [libqwt5-qt4-dev]
@@ -1453,7 +1489,8 @@ libreadline-dev:
       packages: [sys-libs/readline]
   ubuntu: [libreadline-dev]
 libreadline-java:
-  arch: [java-readline]
+  arch:
+    aur: [java-readline]
   debian: [libreadline-java]
   fedora: [libreadline-java]
   gentoo:
@@ -1461,14 +1498,16 @@ libreadline-java:
       packages: [dev-java/libreadline-java]
   ubuntu: [libreadline-java]
 libsimage-dev:
-  arch: [simage]
+  arch:
+    aur: [simage]
   debian: [libsimage-dev]
   gentoo:
     portage:
       packages: [media-libs/simage]
   ubuntu: [libsimage-dev]
 libsoqt4-dev:
-  arch: [soqt]
+  arch:
+    aur: [soqt]
   debian: [libsoqt4-dev]
   fedora: [SoQt-devel]
   gentoo:
@@ -1476,7 +1515,8 @@ libsoqt4-dev:
       packages: [media-libs/SoQt]
   ubuntu: [libsoqt4-dev]
 libspnav-dev:
-  arch: [libspnav]
+  arch:
+    aur: [libspnav]
   debian: [libspnav-dev]
   fedora: [libspnav-devel]
   gentoo:
@@ -1573,7 +1613,8 @@ libudev-dev:
       packages: [sys-apps/systemd]
   ubuntu: [libudev-dev]
 libunittest++:
-  arch: [unittestpp]
+  arch:
+    aur: [unittestpp]
   debian: [libunittest++-dev]
   fedora: [unittest]
   macports: [unittest-cpp]
@@ -1719,7 +1760,8 @@ linux-headers-generic:
   debian: [linux-headers-generic]
   ubuntu: [linux-headers-generic]
 log4cxx:
-  arch: [log4cxx]
+  arch:
+    aur: [log4cxx]
   cygwin: [liblog4cxx-devel]
   debian:
     sid: [liblog4cxx10-dev]
@@ -1783,7 +1825,8 @@ netpbm:
   macports: [netpbm]
   ubuntu: [libnetpbm10-dev]
 nite-dev:
-  arch: [primesense-nite]
+  arch:
+    aur: [primesense-nite]
   debian: [nite-dev]
   fedora: [openni-nite-devel]
   ubuntu: [nite-dev]
@@ -1808,7 +1851,8 @@ omniidl:
     quantal: [omniidl]
     raring: [omniidl]
 omniorb:
-  arch: [omniorb]
+  arch:
+    aur: [omniorb]
   debian: [omniorb4, omniidl4, omniorb4-nameserver, libomniorb4-1, libomniorb4-dev, libomnithread3-dev, libomnithread3c2]
   fedora: [omniORB]
   ubuntu:
@@ -1820,7 +1864,8 @@ omniorb:
     quantal: [omniorb, omniidl, omniorb-nameserver, libomniorb4-1, libomniorb4-dev, libomnithread3-dev, libomnithread3c2]
     raring: [omniorb, omniidl, omniorb-nameserver, libomniorb4-1, libomniorb4-dev, libomnithread3-dev, libomnithread3c2]
 omniorb4-idl:
-  arch: [omniorb]
+  arch:
+    aur: [omniorb]
   debian: [omniorb-idl]
   ubuntu: [omniorb4-idl]
 opende:
@@ -2008,7 +2053,8 @@ snappy:
   fedora: [snappy]
   ubuntu: [libsnappy-dev]
 spacenavd:
-  arch: [spacenavd]
+  arch:
+    aur: [spacenavd]
   debian: [spacenavd]
   fedora: [spacenavd]
   ubuntu: [spacenavd]
@@ -2031,12 +2077,14 @@ suitesparse:
   fedora: [suitesparse-devel]
   ubuntu: [libsuitesparse-dev]
 swi-prolog:
-  arch: [swi-prolog]
+  arch:
+    aur: [swi-prolog]
   debian: [swi-prolog]
   fedora: [pl]
   ubuntu: [swi-prolog]
 swi-prolog-clib:
-  arch: [swi-prolog]
+  arch:
+    aur: [swi-prolog]
   debian: [swi-prolog-clib]
   fedora: [pl-devel]
   ubuntu:
@@ -2048,7 +2096,8 @@ swi-prolog-clib:
     quantal: [swi-prolog]
     raring: [swi-prolog]
 swi-prolog-http:
-  arch: [swi-prolog]
+  arch:
+    aur: [swi-prolog]
   debian: [swi-prolog-http]
   ubuntu:
     lucid: [swi-prolog-http]
@@ -2059,12 +2108,14 @@ swi-prolog-http:
     quantal: [swi-prolog]
     raring: [swi-prolog]
 swi-prolog-odbc:
-  arch: [swi-prolog]
+  arch:
+    aur: [swi-prolog]
   debian: [swi-prolog-odbc]
   fedora: [pl-odbc]
   ubuntu: [swi-prolog-odbc]
 swi-prolog-semweb:
-  arch: [swi-prolog]
+  arch:
+    aur: [swi-prolog]
   debian: [swi-prolog-semweb]
   ubuntu:
     lucid: [swi-prolog-semweb]
@@ -2075,7 +2126,8 @@ swi-prolog-semweb:
     quantal: [swi-prolog]
     raring: [swi-prolog]
 swi-prolog-sgml:
-  arch: [swi-prolog]
+  arch:
+    aur: [swi-prolog]
   debian: [swi-prolog-sgml]
   ubuntu:
     lucid: [swi-prolog-sgml]
@@ -2086,7 +2138,8 @@ swi-prolog-sgml:
     quantal: [swi-prolog]
     raring: [swi-prolog]
 swi-prolog-xpce:
-  arch: [swi-prolog]
+  arch:
+    aur: [swi-prolog]
   debian: [swi-prolog-xpce]
   fedora: [pl-xpce]
   ubuntu:
@@ -2103,7 +2156,8 @@ sysstat:
   fedora: [sysstat]
   ubuntu: [sysstat]
 tango-icon-theme:
-  arch: [tango-icon-theme]
+  arch:
+    aur: [tango-icon-theme]
   debian: [tango-icon-theme]
   fedora: [tango-icon-theme]
   gentoo: [gentoo, x11-themes/tango-icon-theme]
@@ -2181,15 +2235,18 @@ tix:
   fedora: [tix]
   ubuntu: [tix]
 ttf-kochi-gothic:
-  arch: [ttf-togoshi-gothic]
+  arch:
+    aur: [ttf-togoshi-gothic]
   debian: [ttf-kochi-gothic]
   ubuntu: [ttf-kochi-gothic]
 ttf-kochi-mincho:
-  arch: [ttf-togoshi-mincho]
+  arch:
+    aur: [ttf-togoshi-mincho]
   debian: [ttf-kochi-mincho]
   ubuntu: [ttf-kochi-mincho]
 ttf-mscorefonts-installer:
-  arch: [ttf-ms-fonts]
+  arch:
+    aur: [ttf-ms-fonts]
   debian: [ttf-mscorefonts-installer]
   macports:
 ttf-sazanami-gothic:
@@ -2203,7 +2260,8 @@ ttf-sazanami-mincho:
   fedora: [sazanami-mincho-fonts]
   ubuntu: [ttf-sazanami-mincho]
 udhcpc:
-  arch: [udhcp]
+  arch:
+    aur: [udhcp]
   debian: [udhcpc]
   ubuntu: [udhcpc]
 unison:
@@ -2394,7 +2452,8 @@ yasm:
   fedora: [yasm]
   ubuntu: [yasm]
 zbar:
-  arch: [zbar]
+  arch:
+    aur: [zbar]
   debian: [libzbar-dev]
   fedora: [zbar]
   ubuntu: [libzbar-dev]
