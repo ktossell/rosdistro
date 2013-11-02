@@ -3,7 +3,7 @@ ipython:
   macports: [py26-ipython]
   ubuntu: [ipython]
 paramiko:
-  arch: [python-paramiko]
+  arch: [python2-paramiko]
   debian: [python-paramiko]
   fedora: [python-paramiko]
   freebsd: [py27-paramiko]
@@ -13,6 +13,8 @@ paramiko:
   rhel: [python-paramiko]
   ubuntu: [python-paramiko]
 pyside-tools:
+  arch:
+    aur: [python2-pyside-tools]
   debian: [pyside-tools]
   fedora: [pyside-tools]
   ubuntu: [pyside-tools]
@@ -28,6 +30,8 @@ python:
   rhel: [python-devel]
   ubuntu: [python-dev]
 python-argparse:
+  arch:
+    aur: [python2-argparse]
   debian: [python-argparse]
   fedora: [python]
   ubuntu:
@@ -49,13 +53,15 @@ python-beautifulsoup:
   fedora: [python-BeautifulSoup]
   ubuntu: [python-beautifulsoup]
 python-bluez:
-  arch: [python-pybluez]
+  arch: [python2-pybluez]
   debian: [python-bluez]
   fedora: [pybluez]
   gentoo: [dev-python/pybluez]
   rhel: [python-bluez]
   ubuntu: [python-bluez]
 python-catkin-pkg:
+  arch:
+    aur: [python2-catkin_pkg-git]
   debian: [python-catkin-pkg]
   fedora: [python-catkin_pkg]
   osx:
@@ -100,10 +106,13 @@ python-deap-pip:
   ubuntu:
     pip: [deap]
 python-docutils:
+  arch: [python2-docutils]
   debian: [python-docutils]
   fedora: [python-docutils]
   ubuntu: [python-docutils]
 python-empy:
+  arch:
+    aur: [python2-empy]
   debian: [python-empy]
   fedora: [python-empy]
   ubuntu: [python-empy]
@@ -131,7 +140,7 @@ python-httplib2:
   fedora: [python-httplib2]
   ubuntu: [python-httplib2]
 python-imaging:
-  arch: [python-imaging]
+  arch: [python2-imaging]
   debian: [python-imaging]
   fedora:
     beefy: [python-imaging]
@@ -147,6 +156,8 @@ python-impacket:
   debian: [python-impacket]
   ubuntu: [python-impacket]
 python-kitchen:
+  arch:
+    aur: [python-kitchen]
   debian: [python-kitchen]
   fedora: [python-kitchen]
   ubuntu: [python-kitchen]
@@ -164,6 +175,7 @@ python-matplotlib:
   rhel: [python-matplotlib]
   ubuntu: [python-matplotlib]
 python-mechanize:
+  arch: [python2-mechanize]
   debian: [python-mechanize]
   fedora: [python-mechanize]
   ubuntu: [python-mechanize]
@@ -194,6 +206,8 @@ python-numpy:
   rhel: [numpy]
   ubuntu: [python-numpy]
 python-omniorb:
+  arch:
+    aur: [omniorbpy]
   debian: [python-omniorb, omniidl-python]
   ubuntu:
     lucid: [python-omniorb2, omniidl4-python]
@@ -204,11 +218,12 @@ python-omniorb:
     quantal: [python-omniorb, omniidl-python]
     raring: [python-omniorb, omniidl-python]
 python-opengl:
+  arch: [python2-opengl]
   debian: [python-opengl]
   fedora: [PyOpenGL]
   ubuntu: [python-opengl]
 python-paramiko:
-  arch: [python-paramiko]
+  arch: [python2-paramiko]
   debian: [python-paramiko]
   fedora: [python-paramiko]
   freebsd: [py27-paramiko]
@@ -224,6 +239,7 @@ python-pexpect:
   debian: [python-pexpect]
   ubuntu: [python-pexpect]
 python-psutil:
+  arch: [python2-psutil]
   debian: [python-psutil]
   fedora: [python-psutil]
   ubuntu: [python-psutil]
@@ -241,6 +257,8 @@ python-pyassimp:
     quantal: [python-pyassimp]
     raring: [python-pyassimp]
 python-pydot:
+  arch:
+    aur: [pydot]
   debian: [python-pydot]
   fedora: [pydot]
   osx:
@@ -289,13 +307,15 @@ python-pyproj:
     apt:
       packages: [python-pyproj]
 python-pyside:
+  arch:
+    aur: [python2-pyside]
   debian: [python-pyside]
   ubuntu: [python-pyside]
 python-pyside.qtuitools:
   debian: [python-pyside.qtuitools]
   ubuntu: [python-pyside.qtuitools]
 python-qt-bindings:
-  arch: [python2-pyqt]
+  arch: [python2-pyqt4]
   debian:
     sid: [python-pyside, libpyside-dev, libshiboken-dev, shiboken, python-qt4, python-qt4-dev, python-sip-dev]
     squeeze: [python-qt4, python-qt4-dev, pyhton-sip-dev]
@@ -310,10 +330,13 @@ python-qt-bindings:
     quantal: [python-pyside, libpyside-dev, libshiboken-dev, shiboken, python-qt4, python-qt4-dev, python-sip-dev]
     raring: [python-pyside, libpyside-dev, libshiboken-dev, shiboken, python-qt4, python-qt4-dev, python-sip-dev]
 python-qt-bindings-gl:
+  arch: [python2-pyqt4]
   debian: [python-qt4-gl]
   fedora: [PyQt4]
   ubuntu: [python-qt4-gl]
 python-qt-bindings-qwt5:
+  arch:
+    aur: [pyqwt]
   debian: [python-qwt5-qt4]
   fedora: [PyQwt-devel]
   ubuntu: [python-qwt5-qt4]
@@ -334,6 +357,8 @@ python-redis:
   debian: [python-redis]
   ubuntu: [python-redis]
 python-rosdep:
+  arch:
+    aur: [python2-rosdep]
   debian: [python-rosdep]
   fedora: [python-rosdep]
   osx:
@@ -341,11 +366,17 @@ python-rosdep:
       packages: [rosdep]
   ubuntu: [python-rosdep]
 python-rosinstall:
+  arch:
+    aur: [python2-rosinstall]
   fedora: [python-rosinstall]
   ubuntu: [python-rosinstall]
 python-rosinstall-generator:
+  arch:
+    aur: [python2-rosinstall_generator]
   ubuntu: [python-rosinstall-generator]
 python-rospkg:
+  arch:
+    aur: [python2-rospkg]
   debian: [python-rospkg]
   fedora: [python-rospkg]
   ubuntu: [python-rospkg]
@@ -362,6 +393,7 @@ python-scipy:
   opensuse: [python-scipy]
   ubuntu: [python-scipy]
 python-serial:
+  arch: [python2-pyserial]
   debian: [python-serial]
   fedora: [pyserial]
   ubuntu: [python-serial]
@@ -390,6 +422,7 @@ python-sphinx:
   macports: [py26-sphinx]
   ubuntu: [python-sphinx]
 python-support:
+  arch: [python2]
   debian: [python-support]
   fedora: [python]
   ubuntu: [python-support]
@@ -400,6 +433,7 @@ python-sympy:
   debian: [python-sympy]
   ubuntu: [python-sympy]
 python-tk:
+  arch: [tk, python2]
   debian: [python-tk]
   ubuntu: [python-tk]
 python-twisted-bin:
