@@ -137,7 +137,7 @@ python-bluez:
     trusty: [python-bluez]
 python-catkin-pkg:
   arch:
-    aur: [python2-catkin_pkg-git]
+    aur: [python2-catkin_pkg]
   debian: [python-catkin-pkg]
   fedora: [python-catkin_pkg]
   opensuse: [python-catkin_pkg]
