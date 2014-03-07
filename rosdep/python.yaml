@@ -96,6 +96,7 @@ python-argparse:
       packages: []
 python-avahi:
   debian: [python-avahi]
+  fedora: [avahi-ui-tools]
   ubuntu:
     lucid: [python-avahi]
     maverick: [python-avahi]
@@ -155,6 +156,13 @@ python-catkin-pkg:
     saucy: [python-catkin-pkg]
     trusty: [python-catkin-pkg]
     trusty_python3: [python3-catkin-pkg]
+python-cherrypy:
+  ubuntu:
+    precise: [python-cherrypy3]
+    quantal: [python-cherrypy3]
+    raring: [python-cherrypy3]
+    saucy: [python-cherrypy3]
+    trusty: [python-cherrypy3]
 python-clearsilver:
   centos: [python-clearsilver]
   debian: [python-clearsilver]
@@ -302,6 +310,7 @@ python-gridfs:
 python-gst:
   arch: [gstreamer0.10-python]
   debian: [python-gst0.10]
+  fedora: [gstreamer-python]
   ubuntu:
     lucid: [python-gst0.10]
     maverick: [python-gst0.10]
@@ -633,6 +642,7 @@ python-psycopg2:
     trusty: [python-psycopg2]
     trusty_python3: [python3-psycopg2]
 python-pyassimp:
+  fedora: [assimp-python]
   osx:
     lion:
       homebrew:
@@ -1104,6 +1114,7 @@ python-sympy:
 python-tk:
   arch: [tk, python2]
   debian: [python-tk]
+  fedora: [blt, tcl, tix, tk]
   ubuntu:
     lucid: [python-tk]
     maverick: [python-tk]
