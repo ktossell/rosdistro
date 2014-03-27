@@ -1021,12 +1021,6 @@ repositories:
       type: git
       url: https://github.com/ethz-asl/ethzasl_xsens_driver.git
       version: master
-  euslisp:
-    release:
-      tags:
-        release: release/groovy/{package}/{version}
-      url: https://github.com/start-jsk/euslisp-release.git
-      version: 9.00.0-6
   executive_rgoap:
     doc:
       type: git
@@ -1428,7 +1422,7 @@ repositories:
       tags:
         release: release/groovy/{package}/{version}
       url: https://github.com/tork-a/hrpsys-release.git
-      version: 315.1.8-0
+      version: 315.1.9-2
     source:
       type: git
       url: https://github.com/start-jsk/hrpsys.git
@@ -1591,7 +1585,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/ipa320/ipa_canopen.git
-      version: master
+      version: groovy
   ipa_canopen_tutorials:
     doc:
       type: git
@@ -1638,28 +1632,61 @@ repositories:
       type: git
       url: https://github.com/ros-drivers/joystick_drivers_tutorials.git
       version: master
-  jsk-ros-pkg:
+  jsk_common:
     doc:
-      type: svn
-      url: https://jsk-ros-pkg.svn.sourceforge.net/svnroot/jsk-ros-pkg/trunk
-      version: HEAD
-  jsk_hark_msgs:
+      type: git
+      url: https://github.com/jsk-ros-pkg/jsk_common.git
+      version: master
     release:
+      packages:
+      - collada_urdf_jsk_patch
+      - depth_image_proc_jsk_patch
+      - downward
+      - dynamic_tf_publisher
+      - image_view2
+      - image_view_jsk_patch
+      - jsk_common
+      - jsk_footstep_msgs
+      - jsk_gui_msgs
+      - jsk_hark_msgs
+      - jsk_tools
+      - jsk_topic_tools
+      - laser_filters_jsk_patch
+      - multi_map_server
+      - openni_tracker_jsk_patch
+      - opt_camera
+      - posedetection_msgs
+      - pr2_groovy_patches
+      - rospatlite
+      - rosping
+      - stereo_synchronizer
       tags:
         release: release/groovy/{package}/{version}
-      url: https://github.com/start-jsk/jsk_hark_msgs-release.git
-  jsk_openni_kinect:
+      url: https://github.com/tork-a/jsk_common-release.git
+      version: 1.0.4-0
+    source:
+      type: git
+      url: https://github.com/jsk-ros-pkg/jsk_common.git
+      version: master
+    status: developed
+  jsk_roseus:
+    doc:
+      type: git
+      url: https://github.com/jsk-ros-pkg/jsk_roseus.git
+      version: master
     release:
+      packages:
+      - euslisp
+      - roseus
       tags:
-        release: release/groovy/{package}/{version}
-      url: https://github.com/start-jsk/jsk_openni_kinect-release.git
-      version: 0.1.0-2
-  jsk_rviz_plugins:
-    release:
-      tags:
-        release: release/groovy/{package}/{version}
-      url: https://github.com/start-jsk/jsk_rviz_plugins-release.git
-      version: 0.0.10-0
+        release: release/hydro/{package}/{version}
+      url: https://github.com/tork-a/jsk_roseus-release.git
+      version: 1.0.1-0
+    source:
+      type: git
+      url: https://github.com/jsk-ros-pkg/jsk_roseus.git
+      version: master
+    status: developed
   katana_driver:
     doc:
       type: git
@@ -2241,11 +2268,12 @@ repositories:
       tags:
         release: release/groovy/{package}/{version}
       url: https://github.com/ros-gbp/nao_robot-release.git
-      version: 0.2.2-0
+      version: 0.2.3-0
     source:
       type: git
       url: https://github.com/ros-nao/nao_robot.git
       version: devel
+    status: developed
   nasa_r2_common:
     doc:
       type: git
@@ -2547,7 +2575,11 @@ repositories:
       tags:
         release: release/groovy/{package}/{version}
       url: https://github.com/tork-a/openhrp3-release.git
-      version: 3.1.5-3
+      version: 3.1.5-5
+    source:
+      type: git
+      url: https://github.com/start-jsk/openhrp3.git
+      version: master
     status: maintained
   openni2_camera:
     doc:
@@ -2602,7 +2634,11 @@ repositories:
       tags:
         release: release/groovy/{package}/{version}
       url: https://github.com/tork-a/openrtm_aist_core-release.git
-      version: 1.1.0-1
+      version: 1.1.0-6
+    source:
+      type: git
+      url: https://github.com/start-jsk/openrtm_aist_core.git
+      version: master
     status: maintained
   optris_drivers:
     doc:
@@ -2764,7 +2800,7 @@ repositories:
       tags:
         release: release/groovy/{package}/{version}
       url: https://github.com/ros-gbp/pluginlib-release.git
-      version: 1.9.23-0
+      version: 1.9.24-0
     source:
       type: git
       url: https://github.com/ros/pluginlib.git
@@ -3360,6 +3396,11 @@ repositories:
       url: https://github.com/ros/ros_comm.git
       version: groovy-devel
     status: maintained
+  ros_dds_proxies:
+    doc:
+      type: git
+      url: https://github.com/ronnyh/ros_dds_proxies.git
+      version: master
   ros_http_video_streamer:
     release:
       tags:
@@ -3491,11 +3532,6 @@ repositories:
       url: https://github.com/ros-infrastructure/rosdoc_lite.git
       version: master
     status: maintained
-  roseus:
-    release:
-      tags:
-        release: release/groovy/{package}/{version}
-      url: https://github.com/start-jsk/roseus-release.git
   rosh_core:
     doc:
       type: hg
@@ -3551,9 +3587,9 @@ repositories:
     status: maintained
   roslisp_common:
     doc:
-      type: svn
-      url: https://code.ros.org/svn/ros-pkg/stacks/roslisp_common/trunk
-      version: HEAD
+      type: git
+      url: https://github.com/ros/roslisp_common.git
+      version: master
     release:
       packages:
       - actionlib_lisp
@@ -3753,7 +3789,11 @@ repositories:
       tags:
         release: release/groovy/{package}/{version}
       url: https://github.com/tork-a/rtmros_common-release.git
-      version: 1.0.5-1
+      version: 1.0.7-6
+    source:
+      type: git
+      url: https://github.com/start-jsk/rtmros_common.git
+      version: master
     status: developed
   rtmros_hironx:
     doc:
@@ -3808,7 +3848,11 @@ repositories:
       tags:
         release: release/groovy/{package}/{version}
       url: https://github.com/tork-a/rtshell_core-release.git
-      version: 3.0.0-2
+      version: 3.0.0-3
+    source:
+      type: git
+      url: https://github.com/start-jsk/rtshell_core.git
+      version: master
     status: maintained
   rtt_common_msgs:
     doc:
@@ -4322,7 +4366,24 @@ repositories:
     doc:
       type: git
       url: https://github.com/lagadic/vision_visp.git
+      version: groovy
+    release:
+      packages:
+      - vision_visp
+      - visp_auto_tracker
+      - visp_bridge
+      - visp_camera_calibration
+      - visp_hand2eye_calibration
+      - visp_tracker
+      tags:
+        release: release/groovy/{package}/{version}
+      url: https://github.com/lagadic/vision_visp-release.git
+      version: 0.7.2-1
+    source:
+      type: git
+      url: https://github.com/lagadic/vision_visp.git
       version: groovy-devel
+    status: maintained
   viso2:
     doc:
       type: git
@@ -4332,8 +4393,9 @@ repositories:
     release:
       tags:
         release: release/groovy/{package}/{version}
-      url: https://github.com/laas/visp-release.git
-      version: 2.9.0-2
+      url: https://github.com/lagadic/visp-release.git
+      version: 2.9.0-3
+    status: maintained
   visualization:
     doc:
       type: git

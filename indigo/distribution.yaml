@@ -125,7 +125,8 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ros-gbp/console_bridge-release.git
-      version: 0.2.4-1
+      version: 0.2.7-0
+    status: maintained
   control_msgs:
     doc:
       type: git
@@ -171,7 +172,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ros-gbp/ecto_ros-release.git
-      version: 0.4.0-0
+      version: 0.4.1-0
     source:
       type: git
       url: https://github.com/plasmodic/ecto_ros.git
@@ -321,7 +322,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ros-gbp/household_objects_database_msgs-release.git
-      version: 0.1.1-0
+      version: 0.1.1-2
     status: maintained
   image_common:
     doc:
@@ -368,7 +369,11 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ros-gbp/laser_filters-release.git
-      version: 1.6.14-0
+      version: 1.7.0-0
+    source:
+      type: git
+      url: https://github.com/ros-perception/laser_filters.git
+      version: indigo-devel
     status: maintained
   laser_geometry:
     doc:
@@ -397,10 +402,6 @@ repositories:
         release: release/indigo/{package}/{version}
       url: https://github.com/ktossell/libuvc-release.git
       version: 0.0.3-2
-    source:
-      type: git
-      url: https://github.com/ktossell/libuvc.git
-      version: master
     status: developed
   libuvc_ros:
     release:
@@ -421,7 +422,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ros-gbp/manipulation_msgs-release.git
-      version: 0.2.0-0
+      version: 0.2.0-2
     status: maintained
   map_msgs:
     doc:
@@ -438,11 +439,20 @@ repositories:
       url: https://github.com/ethz-asl/map_msgs.git
       version: master
   media_export:
+    doc:
+      type: git
+      url: https://github.com/ros/media_export.git
+      version: indigo-devel
     release:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ros-gbp/media_export-release.git
-      version: 0.1.0-0
+      version: 0.2.0-0
+    source:
+      type: git
+      url: https://github.com/ros/media_export.git
+      version: indigo-devel
+    status: maintained
   message_generation:
     doc:
       type: git
@@ -465,6 +475,13 @@ repositories:
       url: https://github.com/ros-gbp/message_runtime-release.git
       version: 0.4.12-0
     status: maintained
+  moveit_commander:
+    release:
+      tags:
+        release: release/indigo/{package}/{version}
+      url: https://github.com/ros-gbp/moveit_commander-release.git
+      version: 0.5.6-0
+    status: maintained
   moveit_core:
     release:
       tags:
@@ -483,7 +500,28 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ros-gbp/moveit_msgs-release.git
-      version: 0.5.3-0
+      version: 0.5.4-2
+  moveit_planners:
+    release:
+      packages:
+      - moveit_planners
+      - moveit_planners_ompl
+      tags:
+        release: release/indigo/{package}/{version}
+      url: https://github.com/ros-gbp/moveit_planners-release.git
+      version: 0.5.5-0
+    status: maintained
+  moveit_plugins:
+    release:
+      packages:
+      - moveit_fake_controller_manager
+      - moveit_plugins
+      - moveit_simple_controller_manager
+      tags:
+        release: release/indigo/{package}/{version}
+      url: https://github.com/ros-gbp/moveit_plugins-release.git
+      version: 0.5.6-0
+    status: maintained
   moveit_resources:
     release:
       tags:
@@ -508,7 +546,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ros-gbp/moveit_ros-release.git
-      version: 0.5.16-0
+      version: 0.5.18-0
     status: maintained
   nodelet_core:
     doc:
@@ -554,7 +592,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ros-gbp/octomap_msgs-release.git
-      version: 0.3.1-1
+      version: 0.3.1-4
   ompl:
     release:
       tags:
@@ -602,7 +640,7 @@ repositories:
       type: git
       url: https://github.com/ros-perception/pcl_conversions.git
       version: hydro-devel
-    status: maintained
+    status: unmaintained
   pcl_msgs:
     doc:
       type: git
@@ -610,14 +648,14 @@ repositories:
       version: hydro-devel
     release:
       tags:
-        !!python/unicode 'release': release/indigo/{package}/{version}
+        release: release/indigo/{package}/{version}
       url: https://github.com/ros-gbp/pcl_msgs-release.git
       version: 0.1.0-1
     source:
       type: git
       url: https://github.com/ros-perception/pcl_msgs.git
       version: hydro-devel
-    status: maintained
+    status: unmaintained
   pluginlib:
     doc:
       type: git
@@ -627,11 +665,18 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ros-gbp/pluginlib-release.git
-      version: 1.9.23-0
+      version: 1.9.24-0
     source:
       type: git
       url: https://github.com/ros/pluginlib.git
       version: groovy-devel
+    status: maintained
+  pr2_mechanism_msgs:
+    release:
+      tags:
+        release: release/indigo/{package}/{version}
+      url: https://github.com/ros-gbp/pr2_mechanism_msgs-release.git
+      version: 1.8.0-0
     status: maintained
   python_qt_binding:
     doc:
@@ -695,7 +740,8 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/ros-gbp/robot_model-release.git
-      version: 1.11.0-0
+      version: 1.11.2-0
+    status: maintained
   robot_state_publisher:
     release:
       tags:
@@ -703,6 +749,71 @@ repositories:
       url: https://github.com/ros-gbp/robot_state_publisher-release.git
       version: 1.10.2-0
     status: maintained
+  rocon_app_platform:
+    doc:
+      type: git
+      url: https://github.com/robotics-in-concert/rocon_app_platform.git
+      version: indigo
+    source:
+      type: git
+      url: https://github.com/robotics-in-concert/rocon_app_platform.git
+      version: indigo
+    status: developed
+  rocon_concert:
+    doc:
+      type: git
+      url: https://github.com/robotics-in-concert/rocon_concert.git
+      version: indigo
+    source:
+      type: git
+      url: https://github.com/robotics-in-concert/rocon_concert.git
+      version: indigo
+    status: developed
+  rocon_msgs:
+    doc:
+      type: git
+      url: https://github.com/robotics-in-concert/rocon_msgs.git
+      version: indigo
+    source:
+      type: git
+      url: https://github.com/robotics-in-concert/rocon_msgs.git
+      version: indigo
+    status: developed
+  rocon_multimaster:
+    doc:
+      type: git
+      url: https://github.com/robotics-in-concert/rocon_multimaster.git
+      version: indigo
+    source:
+      type: git
+      url: https://github.com/robotics-in-concert/rocon_multimaster.git
+      version: indigo
+    status: developed
+  rocon_services:
+    doc:
+      type: git
+      url: https://github.com/robotics-in-concert/rocon_services.git
+      version: indigo
+  rocon_tools:
+    doc:
+      type: git
+      url: https://github.com/robotics-in-concert/rocon_tools.git
+      version: indigo
+    source:
+      type: git
+      url: https://github.com/robotics-in-concert/rocon_tools.git
+      version: indigo
+    status: developed
+  rocon_tutorials:
+    doc:
+      type: git
+      url: https://github.com/robotics-in-concert/rocon_tutorials.git
+      version: indigo
+    source:
+      type: git
+      url: https://github.com/robotics-in-concert/rocon_tutorials.git
+      version: indigo
+    status: developed
   ros:
     doc:
       type: git
@@ -1008,6 +1119,28 @@ repositories:
       url: https://github.com/ros-perception/vision_opencv.git
       version: indigo
     status: maintained
+  visualization_tutorials:
+    doc:
+      type: git
+      url: https://github.com/ros-visualization/visualization_tutorials.git
+      version: indigo-devel
+    release:
+      packages:
+      - interactive_marker_tutorials
+      - librviz_tutorial
+      - rviz_plugin_tutorials
+      - rviz_python_tutorial
+      - visualization_marker_tutorials
+      - visualization_tutorials
+      tags:
+        release: release/indigo/{package}/{version}
+      url: https://github.com/ros-gbp/visualization_tutorials-release.git
+      version: 0.9.0-0
+    source:
+      type: git
+      url: https://github.com/ros-visualization/visualization_tutorials.git
+      version: indigo-devel
+    status: maintained
   warehouse_ros:
     release:
       tags:
@@ -1015,5 +1148,30 @@ repositories:
       url: https://github.com/ros-gbp/warehouse_ros-release.git
       version: 0.8.6-0
     status: maintained
+  zeroconf_avahi_suite:
+    doc:
+      type: git
+      url: https://github.com/stonier/zeroconf_avahi_suite.git
+      version: indigo
+    source:
+      type: git
+      url: https://github.com/stonier/zeroconf_avahi_suite.git
+      version: indigo
+    status: developed
+  zeroconf_msgs:
+    doc:
+      type: git
+      url: https://github.com/stonier/zeroconf_msgs.git
+      version: indigo
+    release:
+      tags:
+        release: release/indigo/{package}/{version}
+      url: https://github.com/yujinrobot-release/zeroconf_msgs-release.git
+      version: 0.2.1-0
+    source:
+      type: git
+      url: https://github.com/stonier/zeroconf_msgs.git
+      version: indigo
+    status: developed
 type: distribution
 version: 1
